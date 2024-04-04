@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "parse": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        //disablng double quotes rules
+        "quotes": [
+            "error",
+            "double"
+        ],
+        //disablng no semicolon rules
+        "semi": [
+            "error",
+            "always"
+        ],
+        //disablng usage of explicit any
+        "@typescript-eslint/no-explicit-any": "off",
+        //disablng define retun type rules
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "no-asyn-promise-executor": "off",
+        "no-new": "off",
+        "@typescript-eslint/ban-types": "off"
+    }
+}
